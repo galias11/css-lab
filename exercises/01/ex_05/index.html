@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Added after checking HTML Boilerplate doc -> compatibility with IE explorer -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Exercise 05</title>
+  <!-- Added after checking HTML Boilerplate doc -> Description-->
+  <meta name="description" content="Globant bootcamp-ui HTML01.ex_05">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <header>
+    <h1>My web music player</h1>
+  </header>
+
+  <!-- Article structure added after reading "WHAT DOES IT ALL MEAN?" -->
+  <article>
+    <header>
+      <h2>Las pastillas del abuelo - Me juego el corazón</h2>
+    </header>
+
+    <br>
+    <!-- Style was added to HTML document because it wasn't exercise idea to link a css stylesheet -->
+    <!-- alt text was modified to meet accesibility requeriments -->
+    <img src="media/lpda.jpg" alt="Las pastillas del abuelo - Me juego el corazón - Logo" height="350" width="350" style="max-width:100%;">
+
+    <h3>Audio (live):</h3>
+    <!-- Style was added to HTML document because it wasn't exercise idea to link a css stylesheet -->
+    <audio controls style="max-width:100%;">
+      <!-- src and type attributes removed from audio and added in a source tag due to W3C validation warining -->
+      <source src="media/lpda_me_juego_el_corazon.mp3" type="audio/mp3">
+
+    </audio>
+
+    <h3>Video (live):</h3>
+    <!-- Style was added to HTML document because it wasn't exercise idea to link a css stylesheet -->
+    <video controls style="max-width:100%;">
+      <source src="media/lpda_me_juego_el_corazon.mp4" type="video/mp4">
+      Your browser does not support html5 video.
+    </video>
+
+  </article>
+</body>
+
+</html>
+
+<!-- W3c validation: Document checking completed. No errors or warnings to show. -->
