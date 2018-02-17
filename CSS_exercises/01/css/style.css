@@ -1,4 +1,4 @@
-html {
+html{
   font-size: 14px;
   font-family: helvetica, monospace, arial, sans-serif;
 }
@@ -9,4 +9,42 @@ header, footer, aside, nav {
 
 header, footer {
   text-align: center;
+}
+
+.header {
+  font-size: 46px;
+}
+
+.footer {
+  font-size: 10px;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.navigation {
+  font-size: 12px;
+}
+
+/*[class] has same specifity but it's applied over classes defined on point 03
+because last read property is applied when specifity is the same*/
+[class] {
+  font-weight: bold;
+}
+
+.sidebar {
+  font-size: 10px;
+}
+
+/* 07 --> Although it is not a good practice !important can be used.
+If you see HTML an inline style has been specified for h1 in main header
+--> background: red
+by using !important this inline style is overriden */
+[class$="r"] {
+  background: magenta !important;
+}
+
+[class*="a"]:not([class$="r"]) {
+  background: blue;
 }
